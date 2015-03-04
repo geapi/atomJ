@@ -7,12 +7,21 @@
 
 '.editor':
   'cmd-shift-n': 'fuzzy-finder:toggle-file-finder'
+  'cmd-1': 'tree-view:toggle'
   'alt-shift-up': 'editor:move-line-up'
   'alt-shift-down':'editor:move-line-down'
   'cmd-shift-w':'pane:close-other-items'
+  'cmd-shift-a': 'command-palette:toggle'
+  'cmd-l': 'go-to-line:toggle'
   'ctrl-alt-cmd-up': 'pane:split-right'
   'ctrl-alt-cmd-down': 'pane:split-down'
   'ctrl-w': 'editor:select-word'
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-d': 'editor:duplicate-lines'
+
+'.platform-darwin atom-text-editor':
+  'cmd-e': 'fuzzy-finder:toggle-buffer-finder'
+
+'body':
+  'cmd-shift-w':'pane:close-other-items'
