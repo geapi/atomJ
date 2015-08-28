@@ -16,6 +16,7 @@
   'ctrl-alt-cmd-up': 'pane:split-right'
   'ctrl-alt-cmd-down': 'pane:split-down'
   'ctrl-w': 'editor:select-word'
+  'cmd-backspace': 'editor:delete-line'
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-d': 'editor:duplicate-lines'
