@@ -10,7 +10,7 @@ You can read more about Atom keymaps [here](https://atom.io/docs/v0.60.0/advance
 In order to use the keymap from this repo it needs to be in your `.atom` folder in your home directory.
 You can use the commands below to achieve this, you might have to remove the `keymap.cson` from your `.atom` directory before doing so.
 ```
-git clone git@github.com:geapi/atomJ.git
+git clone git@github.com:VoronaPavel/atomJ.git
 ln -s [path-to-atomJ-repo]/keymap.cson ~/.atom/keymap.cson
 ```
 
