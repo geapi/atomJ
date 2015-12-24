@@ -1,27 +1,49 @@
-# These keybindings are a combination of IntelliJ's OS X 10.5+ keybindings
-# and additive ones from Pivotal's practice.
+'body':
+  'alt-`': 'tree-view:toggle'
+  'alt-f4': 'tabs:close-tab'
+  'ctrl-alt-left' : 'pane:show-previous-item'
+  'ctrl-alt-right' : 'pane:show-next-item'
+  'ctrl-e': 'fuzzy-finder:toggle-buffer-finder'
+  'ctrl-n': 'fuzzy-finder:toggle-file-finder'
 
-# This file uses CoffeeScript Object Notation (CSON).
-# If you are unfamiliar with CSON, you can read more about it here:
-# https://github.com/bevry/cson#what-is-cson
-
-'.editor':
-  'cmd-shift-n': 'fuzzy-finder:toggle-file-finder'
-  'cmd-1': 'tree-view:toggle'
-  'alt-shift-up': 'editor:move-line-up'
-  'alt-shift-down':'editor:move-line-down'
-  'cmd-shift-w':'pane:close-other-items'
-  'cmd-shift-a': 'command-palette:toggle'
-  'cmd-l': 'go-to-line:toggle'
-  'ctrl-alt-cmd-up': 'pane:split-right'
-  'ctrl-alt-cmd-down': 'pane:split-down'
-  'ctrl-w': 'editor:select-word'
+'.tree-view':
+  'right': 'tree-view:open-selected-entry'
 
 'atom-workspace atom-text-editor:not([mini])':
-  'cmd-d': 'editor:duplicate-lines'
-
-'.platform-darwin atom-text-editor':
-  'cmd-e': 'fuzzy-finder:toggle-buffer-finder'
-
-'body':
-  'cmd-shift-w':'pane:close-other-items'
+  'alt--': 'editor:fold-current-row'
+  'alt-`': 'tree-view:toggle'
+  'alt-=': 'editor:unfold-current-row'
+  'alt-down': 'keyboard-scroll:scrollDownWithCursor'
+  'alt-left': 'editor:move-to-previous-subword-boundary'
+  'alt-right': 'editor:move-to-next-subword-boundary'
+  'alt-up': 'keyboard-scroll:scrollUpWithCursor'
+  'ctrl-[': 'bracket-matcher:go-to-matching-bracket'
+  'ctrl-]': 'bracket-matcher:go-to-matching-bracket'
+  'ctrl-\'': 'toggle-quotes:toggle'
+  'ctrl-alt-left' : 'pane:show-previous-item'
+  'ctrl-alt-right' : 'pane:show-next-item'
+  'ctrl-alt-s': 'settings-view:open'
+  'ctrl-backspace': 'editor:delete-to-beginning-of-subword'
+  'ctrl-d': 'editor:duplicate-lines'
+  'ctrl-down': 'editor:add-selection-below'
+  'ctrl-e': 'fuzzy-finder:toggle-buffer-finder'
+  'ctrl-enter': 'turbo-javascript:end-new-line'
+  'ctrl-f3': 'find-and-replace:select-skip'
+  'ctrl-f4': 'bookmarks:toggle-bookmark'
+  'ctrl-l': 'go-to-line:toggle'
+  'ctrl-n': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-o': 'advanced-open-file:toggle'
+  'ctrl-shift-a': 'command-palette:toggle'
+  'ctrl-shift-alt-down': 'git-diff:move-to-next-diff'
+  'ctrl-shift-alt-up': 'git-diff:move-to-previous-diff'
+  'ctrl-shift-backspace': 'editor:delete-to-beginning-of-word'
+  'ctrl-shift-down':'editor:move-line-down'
+  'ctrl-shift-up': 'editor:move-line-up'
+  'ctrl-up': 'editor:add-selection-above'
+  'ctrl-w': 'editor:select-word'
+  'ctrl-y': 'editor:delete-line'
+  'f2': 'linter:next-error'
+  'f3': 'find-and-replace:select-next'
+  'f4': 'bookmarks:jump-to-next-bookmark'
+  'shift-f2': 'linter:previous-error'
+  'shift-f4': 'bookmarks:jump-to-previous-bookmark'
