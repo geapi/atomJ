@@ -1,27 +1,101 @@
 # These keybindings are a combination of IntelliJ's OS X 10.5+ keybindings
-# and additive ones from Pivotal's practice.
+# and additive ones from Pivotal's practice. And extended by @andre487
 
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
 
-'.editor':
-  'cmd-shift-n': 'fuzzy-finder:toggle-file-finder'
-  'cmd-1': 'tree-view:toggle'
-  'alt-shift-up': 'editor:move-line-up'
-  'alt-shift-down':'editor:move-line-down'
-  'cmd-shift-w':'pane:close-other-items'
+#
+# Project navigation
+#
+'.platform-darwin.platform-darwin atom-workspace':
   'cmd-shift-a': 'command-palette:toggle'
+
+  'cmd-1': 'tree-view:toggle'
+  'cmd-2': 'unset!'
+  'cmd-3': 'unset!'
+  'cmd-4': 'unset!'
+  'cmd-5': 'unset!'
+  'cmd-6': 'unset!'
+  'cmd-7': 'unset!'
+  'cmd-8': 'unset!'
+  'cmd-9': 'unset!'
+
+  'cmd-shift-o': 'fuzzy-finder:toggle-file-finder'
+  'cmd-shift-n': 'fuzzy-finder:toggle-file-finder'
+  'cmd-alt-w':'pane:close-other-items'
+  'cmd-shift-w':'pane:close-all-items'
+
+  #
+  # Git
+  #
+  'ctrl-v': 'git-plus:menu'
+  'cmd-k': 'git-plus:commit'
+  'cmd-alt-a': 'git-plus:add'
+
+#
+# Code navigation and editing
+#
+'.platform-darwin.platform-darwin atom-text-editor':
+  # Navigation
+  'cmd-home': 'core:move-to-top'
+  'cmd-end': 'core:move-to-bottom'
+
   'cmd-l': 'go-to-line:toggle'
+  'cmd-shift-backspace': 'goto-last-edit:run'
+  'ctrl-f12': 'symbols-view:toggle-file-symbols'
+  'ctrl-shift-f12': 'symbols-view:toggle-project-symbols'
+
+  'cmd-b': 'symbols-view:go-to-declaration'
+  'cmd-[': 'symbols-view:return-from-declaration'
+  'cmd-alt-[': 'bracket-matcher:go-to-matching-bracket'
+  'cmd-alt-]': 'bracket-matcher:go-to-matching-bracket'
+
   'ctrl-alt-cmd-up': 'pane:split-right'
   'ctrl-alt-cmd-down': 'pane:split-down'
+
+  # Select
+  'alt-up': 'editor:select-word'
   'ctrl-w': 'editor:select-word'
+  'cmd-alt-up': 'editor:select-line'
 
-'atom-workspace atom-text-editor:not([mini])':
-  'cmd-d': 'editor:duplicate-lines'
-
-'.platform-darwin atom-text-editor':
+  # Find/replace
+  'cmd-r': 'find-and-replace:show'
   'cmd-e': 'fuzzy-finder:toggle-buffer-finder'
 
-'body':
-  'cmd-shift-w':'pane:close-other-items'
+  # Lines management
+  'cmd-d': 'editor:duplicate-lines'
+  'cmd-backspace': 'editor:delete-line'
+  'alt-backspace': 'editor:delete-to-beginning-of-word'
+  'alt-delete': 'editor:delete-to-end-of-word'
+  'cmd-alt-backspace': 'editor:delete-to-beginning-of-line'
+  'cmd-alt-delete': 'editor:delete-to-end-of-line'
+
+  'alt-shift-up': 'editor:move-line-up'
+  'alt-shift-down':'editor:move-line-down'
+
+  'ctrl-alt-j': 'editor:join-lines'
+
+  'alt-enter': 'editor:newline-above'
+  'cmd-enter': 'editor:newline-below'
+  'cmd-shift-enter': 'complete-statement:complete'
+  'cmd-alt-/': 'editor:toggle-line-comments'
+
+  # Folding
+  'cmd-=': 'editor:fold-current-row'
+  'cmd--': 'editor:unfold-current-row'
+
+  'cmd-+': 'editor:fold-all'
+  'cmd-_': 'editor:unfold-all'
+
+  # Code formatting
+  'cmd-alt-l': 'atom-beautify:beautify-editor'
+
+#
+# JavaScript
+#
+'.platform-darwin.platform-darwin atom-text-editor[data-grammar="source js"]':
+  'cmd-b': 'tern:definition'
+  'shift-f6': 'tern:rename'
+  'alt-f7': 'tern:references'
+  'cmd-p': 'tern:documentation'
