@@ -9,8 +9,6 @@
 # Project navigation
 #
 '.platform-darwin.platform-darwin atom-workspace':
-  'cmd-shift-a': 'command-palette:toggle'
-
   'cmd-1': 'tree-view:toggle'
   'cmd-2': 'unset!'
   'cmd-3': 'unset!'
@@ -37,6 +35,8 @@
 # Code navigation and editing
 #
 '.platform-darwin.platform-darwin atom-text-editor':
+  'cmd-shift-a': 'command-palette:toggle'
+
   # Navigation
   'cmd-home': 'core:move-to-top'
   'cmd-end': 'core:move-to-bottom'
