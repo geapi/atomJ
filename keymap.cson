@@ -13,6 +13,7 @@
   'cmd-shift-w':'pane:close-other-items'
   'cmd-shift-a': 'command-palette:toggle'
   'cmd-l': 'go-to-line:toggle'
+  'cmd--': 'editor:toggle-line-comments'
   'ctrl-alt-cmd-up': 'pane:split-right'
   'ctrl-alt-cmd-down': 'pane:split-down'
   'ctrl-w': 'editor:select-word'
