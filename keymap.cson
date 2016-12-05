@@ -23,6 +23,7 @@
 
 '.platform-darwin atom-text-editor':
   'cmd-e': 'fuzzy-finder:toggle-buffer-finder'
+  'ctrl-g': 'find-and-replace:select-next'
 
 'body':
   'cmd-shift-w':'pane:close-other-items'
